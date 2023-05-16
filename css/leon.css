@@ -1,0 +1,549 @@
+
+/* start variable */
+:root{
+    --main-color: #10cab7;
+}
+
+
+
+
+/* end variables */
+
+/* start global rules */
+
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Work Sans', sans-serif;
+}
+/* end global rules */
+
+.border-bottom{
+    border-bottom: 5px solid rgb(201, 201, 54);
+    width: 200px;
+    margin: auto;
+}
+
+h2{
+    font-size: 25px;
+    text-decoration: underline;
+    color: white;
+
+}
+
+h2 span{
+    color: rgb(201, 201, 54);
+}
+
+.btn{
+    padding: 10px 32px;
+    background-color:rgb(201, 201, 54) ;
+    border: none;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    color: whitesmoke;
+}
+
+.container{
+   
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-right: auto;
+    margin-left: auto;
+
+}
+
+/* small */
+
+
+/* global rules */
+
+/* start header */
+
+
+.header{
+    background-color: rgb(11, 11, 47);
+    height: 100vh;
+    
+}
+
+.nav{
+    background-color: #2a2a62;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    margin-top: 25px;
+   
+    
+}
+
+.nav .menu{
+    display: none;
+}
+
+.nav .logo h2{
+    font-size: 25px;
+    text-decoration: underline;
+    color: white;
+
+}
+
+.nav .logo h2 span{
+    color: rgb(201, 201, 54);
+}
+
+.nav .links ul{
+    display: flex;
+    gap: 40px;
+    list-style: none;
+
+}
+
+.nav .links ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 13px;
+    transition: .2s all;
+    -webkit-transition: .2s all;
+    -moz-transition: .2s all;
+    -ms-transition: .2s all;
+    -o-transition: .2s all;
+}
+
+.nav .links ul li:first-child a{
+color: rgb(201, 201, 54);
+}
+
+.nav .links ul li:not(:first-child) a:hover{
+    color: rgb(201, 201, 54);
+}
+
+/* landing */
+.landing{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.landing .landing-image img{
+    width: 540px;
+}
+
+.landing-content h1{
+    color: white;
+    font-size: 60px;
+    margin-bottom: 14px;
+}
+
+.landing-content h1 span{
+    color: rgb(201, 201, 54);
+    border-right: 5px solid rgb(201, 201, 54);;
+    padding-right: 10px;
+}
+
+.landing-content p{
+    color: whitesmoke;
+    font-size: 13px;
+    line-height: 1.5;
+    word-spacing: 3px;
+    margin-bottom: 20px;
+}
+
+.landing-content .btn{
+    padding: 10px 32px;
+    background-color:rgb(201, 201, 54) ;
+    border: none;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    color: whitesmoke;
+}
+
+/* start about */
+
+.about{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.about-content{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.about-content .about-image img{
+    width: 500px;
+}
+
+.about-text{
+    width: 40%;
+}
+
+.about-text h1{
+    margin-top: 0;
+    border-bottom: 5px solid rgb(201, 201, 54) ;
+    
+}
+
+.about-text p{
+    line-height: 1.5;
+}
+
+/* start services */
+
+.services{
+    margin: 50px 0;
+    background-color: rgb(11, 11, 47);
+    height: auto;
+}
+.services .container{
+    
+    padding-bottom: 50px;
+}
+
+.service-heading{
+    text-align: center;
+    color: white;
+    margin-top: 20px;
+}
+
+.service-heading .border-bottom{
+    border-bottom: 5px solid  rgb(201, 201, 54);
+    width: 200px;
+    margin: auto;
+}
+
+
+.services-content{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    
+}
+
+.services-content .services-component{
+    width: 300px;
+    text-align: center;
+    background-color: #2a2a62;
+    padding: 30px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    margin-top: 30px;
+    
+}
+
+.services-content .services-component i{
+    font-size: 40px;
+    color:white;
+    margin-bottom: 20px;
+}
+
+.services-content .services-component h4{
+    color: rgb(201, 201, 54);
+    margin-bottom: 20px;
+
+}
+
+.services-content .services-component p{
+    line-height: 1.5;
+    color: white;
+    font-weight: 300;
+}
+
+/* my projects */
+.projects{
+    margin: 50px 0;
+    
+}
+
+.projects-content h1{
+    text-align: center;
+}
+
+.projects-content .border-bottom{
+
+}
+
+.projects-items{
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: 50px auto;
+    justify-content: space-around;
+    
+    
+}
+
+.projects-items .item{
+    width: 300px;
+    margin-top: 35px;
+}
+
+.projects-items .item img{
+    width: 100%;
+    height: 100%;
+}
+
+/* start contact me */
+.contact{
+    margin: 50px 0;
+}
+
+.contact h1{
+    text-align: center;
+}
+
+.contact-content{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgb(11, 11, 47);
+    margin-top:50px;
+    border-top:4px solid rgb(201, 201, 54);
+    padding: 50px;
+
+}
+.contact-content .form{
+    width: 30%;
+}
+.contact-content .form p{
+    color: white;
+    font-size: 13px;
+    margin-bottom: 5px;
+}
+.contact-content .form input{
+    width: 100%;
+    height: 40px;
+    margin-bottom: 10px;
+    padding-left:10px;
+    caret-color: white;
+    
+}
+
+.contact-content .form input, textarea{
+    background-color: #2a2a62;
+    border: none;
+}
+
+.contact-content .form input:focus, textarea:focus{
+    outline: none;
+}
+.contact-content .form textarea{
+    width: 100%;
+    height: 232px;
+    margin-bottom: 20px;
+    caret-color: white;
+    padding-left: 10px;
+}
+
+.contact-content .form .btn{
+    width: 100%;
+}
+
+
+.contact-content .map{
+    width: 30%;
+}
+
+.contact-content .map iframe{
+    width: 100%;
+}
+
+
+
+/* contact end */
+
+/* start footer */
+
+.foot{
+    background-color: #2a2a62;
+    
+}
+
+.foot-items{
+    
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+}
+
+.foot-items .items p{
+    color: white;
+}
+
+.foot-items .items i{
+    color:  rgb(201, 201, 54);
+    margin-left: 20px;
+    border: 1px solid  rgb(201, 201, 54);
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    padding: 5px;
+}
+
+
+/* media quires */
+
+
+@media (max-width:991px){
+    .landing {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        margin-top: 96px;
+    }
+    .landing-image{
+        
+    }
+
+    .landing .landing-image img{
+        width: 440px;
+    }
+
+    .landing-content h1{
+        font-size: 45px;
+    }
+
+
+
+    .contact-content .form, .contact-content .map{
+        width: 45%;
+        margin-top: 20px;
+        align-items: center;
+    }
+
+    .about-text{
+        width: 40%;
+    }
+
+    .about-content {
+        align-items: center;
+    }
+
+    .about-content .about-image img{
+        width: 400px;
+    }
+
+   
+}
+
+@media (max-width:768px){
+
+    .nav .links{
+        display: none;
+    }
+
+    .nav .menu{
+        display: block;
+        color: white;
+    }
+
+    .landing-image{
+        display: none;
+    }
+
+    .landing{
+        justify-content: center;
+        align-items: center;
+    }
+
+    .landing-content{
+        text-align: center;
+        margin-top: 100px;
+    }
+
+    .about-text{
+        width: 80%;
+        margin-top:50px;
+    }
+    
+
+    .services-content .services-component{
+       margin-top: 30px;
+    }
+
+    .projects-items .item{
+        width: 400px;
+        margin-top: 35px;
+    }
+
+    .contact-content{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-content .form, .contact-content .map{
+        width: 90%;
+        margin-top: 20px;
+        align-items: center;
+    }
+
+    .foot-items .items i{
+        margin-left: 5px;
+    }
+
+    .foot-items{
+    
+        padding: 10px 0;
+    }
+
+    .foot .container{
+        padding: 0;
+    }
+
+}
+
+@media (max-width:480px){
+    .landing {
+        margin-top: -20px;
+}
+
+.about-image{
+    width: 95%;
+    overflow: hidden;
+    
+}
+
+.about-image img{
+    width: 100%;
+    object-fit: cover;
+    
+}
+
+.contact-content .form, .contact-content .map{
+    width: 95%;
+    align-items: center;
+}
+
+
+.foot-items {
+    flex-direction: column;
+    gap: 10px;
+}
+
+}
+
+
+
+
